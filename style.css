@@ -21,6 +21,101 @@ html, body{
 
 .container{
    height: 100%;
+   width: 100vw;
    display: flex;
    justify-content: center;
+   border: 1px solid black;
+}
+
+.container > div:nth-child(2n) {
+   flex-grow: 1;
+}
+
+.container-sidebar {
+   position: relative;
+   height: 100%;
+   width: 390px;
+   box-shadow: 1px 0 12px var(--dark);
+   background: #ffff url(svg/Soothing\ Black\ And\ White\ GIF\ by\ Pi-Slices.gif) center/cover no-repeat ;
+   /* background: fixed cover/fixed ; */
+}
+
+.container-form > .header {
+   z-index: 2;
+   background: linear-gradient(130deg, hsl(245, 50%, 5%), hsl(245, 50%, 7%), hsl(250, 50%, 10%), hsl(280, 50%, 20%) );
+   overflow: hidden;
+   height: 20%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   padding: 2rem;
+   box-shadow: 0 0 12px var(--dark);
+}
+
+.header > h2 {
+   font-family: "Sekuya";
+   font-size: 2.5rem;
+   color: hsl(0, 0%, 91%);
+   letter-spacing: 10px;
+}
+
+.container-form > .form {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   height: 60%;
+   padding: 8px;
+}
+
+form {
+   height: 100%;
+   display: flex;
+   gap: 1rem;
+   padding: 8px;
+}
+
+form > fieldset {
+   flex-grow: 1;
+   position: relative;
+   border-radius: 4px;
+   border: none;
+   
+   /* border: 2px solid var(--dark); */
+}
+
+legend {
+   text-align: left;
+   padding: 6px 1rem;
+   color: hsl(0, 0%, 91%);
+   letter-spacing: 9px;
+   border-radius: 8px;
+   background-color: var(--dark );
+}
+
+.group {
+   display: flex;
+   flex-direction: column;
+   padding: 8px;
+}
+
+.radio-container {
+   display: flex;
+}
+
+.radio {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+input:not(input[type=radio]) {
+   height: 50px;
+   font-size: 1.2rem;
+   padding-left: 1rem;
+}
+
+input[type=radio]{
+   transform: scale(1.5);
+   accent-color: hsl(300, 70%, 45%);
 }
