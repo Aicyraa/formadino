@@ -11,6 +11,7 @@
          href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap"
          rel="stylesheet"
       />
+      <script src="index.js" defer></script>
    </head>
    <body>
       <div class="container">
@@ -27,83 +28,87 @@
             </div>
             <div class="form">
                <form action="index.html" method="get">
-                  <fieldset>
-                     <legend>Information</legend>
-                     <div class="group">
-                        <label for="fname">First Name</label>
-                        <input
-                           type="text"
-                           name="fname"
-                           minlength="1"
-                           maxlength="60"
-                           id="fname"
-                        />
-                        <span id="message"></span>
-                     </div>
-                     <div class="group">
-                        <label for="lname">Last Name</label>
-                        <input
-                           type="text"
-                           name="lname"
-                           minlength="1"
-                           maxlength="60"
-                           id="lname"
-                        />
-                        <span id="message"></span>
-                     </div>
-                     <div class="group">
-                        <label for="age">Age</label>
-                        <input
-                           type="number"
-                           name="age"
-                           minlength="1"
-                           maxlength="60"
-                           id="age"
-                        />
-                        <span id="message"></span>
-                     </div>
-                  </fieldset>
-                  <fieldset>
-                     <legend>Other Details</legend>
-                     <div class="group">
-                        <label for="email">Email</label>
-                        <input
-                           type="email"
-                           name="email"
-                           minlength="1"
-                           maxlength="60"
-                           id="email"
-                        />
-                        <span id="message"></span>
-                     </div>
-                     <div class="group">
-                        <label for="Number">Number</label>
-                        <input
-                           type="text"
-                           name="number"
-                           minlength="1"
-                           maxlength="60"
-                           id="number"
-                        />
-                        <span id="message"></span>
-                     </div>
-                     <div class="group">
-                        <label for="fname">Destination</label>
-                        <div class="radio-container">
-                           <div class="radio">
-                              <input type="radio" value="mars" name="destination" id=""> Mars </input>
-                              <input type="radio" value="earth99" name="destination" id=""> Earth 99 </input>
-                           </div>
-                           <div class="radio">
-                              <input type="radio" value="moon" name="destination" id=""> Moon</input>
-                              <input type="radio" value="jupiter" name="destination" id=""> Jupiter</input>
-                           </div>
+                  <fieldset class="form-main">
+                     <fieldset>
+                        <legend>Information</legend>
+                        <div class="group">
+                           <label for="fname">First Name</label>
+                           <input
+                              type="text"
+                              name="fname"
+                              minlength="1"
+                              maxlength="60"
+                              id="fname"
+                              class="inputs"
+                           />
+                           <span id="message"></span>
                         </div>
-                        <!-- <input type="radio" id="phone" name="contact" value="phone"> -->
-                     </div>
+                        <div class="group">
+                           <label for="lname">Last Name</label>
+                           <input
+                              type="text"
+                              name="lname"
+                              minlength="1"
+                              maxlength="60"
+                              id="lname"
+                              class="inputs"
+                           />
+                           <span id="message"></span>
+                        </div>
+                        <div class="group">
+                           <label for="age">Age</label>
+                           <input
+                              type="number"
+                              name="age"
+                              minlength="1"
+                              maxlength="60"
+                              id="age"
+                              class="inputs"
+                           />
+                           <span id="message"></span>
+                        </div>
+                     </fieldset>
+
+                     <fieldset>
+                        <legend>Other Details</legend>
+                        <div class="group">
+                           <label for="email">Email</label>
+                           <input
+                              type="email"
+                              name="email"
+                              minlength="1"
+                              maxlength="60"
+                              id="email"
+                              class="inputs"
+                           />
+                           <span id="message"></span>
+                        </div>
+                        <div class="group">
+                           <label for="Number">Number</label>
+                           <input
+                              type="text"
+                              name="number"
+                              minlength="1"
+                              maxlength="60"
+                              id="number"
+                              class="inputs"
+                           />
+                           <span id="message"></span>
+                        </div>
+                        <div class="group">
+                           <label for="fname">Destination</label>
+                           <div class="radio-container">
+                                 <input type="radio" value="mars" name="destination" id=""> Mars </input>
+                                 <input type="radio" value="earth99" name="destination" id=""> Earth 99 </input>
+                                 <input type="radio" value="moon" name="destination" id=""> Moon</input>
+                                 <input type="radio" value="jupiter" name="destination" id=""> Jupiter</input>
+                           </div>
+                           <!-- <input type="radio" id="phone" name="contact" value="phone"> -->
+                        </div>
+                     </fieldset>
                   </fieldset>
+                  <button type="button">Submit!</button>
                </form>
-               <button type="button">Submit!</button>
             </div>
          </div>
       </div>
