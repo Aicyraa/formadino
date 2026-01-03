@@ -5,37 +5,61 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Form</title>
       <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap"
+         rel="stylesheet"
+      />
    </head>
    <body>
       <div class="container">
          <div class="container-sidebar">
-            <img
+            <!-- <img
                src="./svg/Soothing Black And White GIF by Pi-Slices.gif"
                alt=""
-            />
-            <span id="text"></span>
+            /> -->
+            <span id="text">UNIVERSE</span>
          </div>
          <div class="container-form">
             <div class="header">
-               <img src="svg/Space Stars GIF.gif" alt="" />
+               <h2 id="header-text">X-VOYAGE</h2>
             </div>
-            <form action="index.html" method="get">
+            <div class="form">
                <form action="index.html" method="get">
                   <fieldset>
                      <legend>Information</legend>
                      <div class="group">
                         <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname" />
+                        <input
+                           type="text"
+                           name="fname"
+                           minlength="1"
+                           maxlength="60"
+                           id="fname"
+                        />
                         <span id="message"></span>
                      </div>
                      <div class="group">
                         <label for="lname">Last Name</label>
-                        <input type="text" name="lname" id="lname" />
+                        <input
+                           type="text"
+                           name="lname"
+                           minlength="1"
+                           maxlength="60"
+                           id="lname"
+                        />
                         <span id="message"></span>
                      </div>
                      <div class="group">
                         <label for="age">Age</label>
-                        <input type="number" name="age" id="age" />
+                        <input
+                           type="number"
+                           name="age"
+                           minlength="1"
+                           maxlength="60"
+                           id="age"
+                        />
                         <span id="message"></span>
                      </div>
                   </fieldset>
@@ -43,22 +67,44 @@
                      <legend>Other Details</legend>
                      <div class="group">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" />
+                        <input
+                           type="email"
+                           name="email"
+                           minlength="1"
+                           maxlength="60"
+                           id="email"
+                        />
                         <span id="message"></span>
                      </div>
                      <div class="group">
                         <label for="Number">Number</label>
-                        <input type="text" name="number" id="number" />
+                        <input
+                           type="text"
+                           name="number"
+                           minlength="1"
+                           maxlength="60"
+                           id="number"
+                        />
                         <span id="message"></span>
                      </div>
                      <div class="group">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="" id="" />
-                        <span id="message"></span>
+                        <label for="fname">Destination</label>
+                        <div class="radio-container">
+                           <div class="radio">
+                              <input type="radio" value="mars" name="destination" id=""> Mars </input>
+                              <input type="radio" value="earth99" name="destination" id=""> Earth 99 </input>
+                           </div>
+                           <div class="radio">
+                              <input type="radio" value="moon" name="destination" id=""> Moon</input>
+                              <input type="radio" value="jupiter" name="destination" id=""> Jupiter</input>
+                           </div>
+                        </div>
+                        <!-- <input type="radio" id="phone" name="contact" value="phone"> -->
                      </div>
                   </fieldset>
                </form>
-            </form>
+               <button type="button">Submit!</button>
+            </div>
          </div>
       </div>
    </body>
