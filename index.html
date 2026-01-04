@@ -5,9 +5,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Form</title>
       <link rel="stylesheet" href="style.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap"
+         rel="stylesheet"
+      />
       <script src="index.js" defer></script>
    </head>
    <body>
@@ -25,17 +28,17 @@
                      <legend>Information</legend>
                      <div class="group">
                         <label for="fname">First Name</label>
-                        <input type="text" name="fname" minlength="1" maxlength="60" id="fname" class="inputs"/>
+                        <input type="text" name="fname" minlength="1" maxlength="60" placeholder="Fake Name" id="fname" class="inputs" />
                         <span id="message"></span>
                      </div>
                      <div class="group">
                         <label for="lname">Last Name</label>
-                        <input type="text" name="lname" minlength="1" maxlength="60" id="lname" class="inputs"/>
+                        <input type="text" name="lname" minlength="1" maxlength="60" placeholder="Fake Surname" id="lname" class="inputs" />
                         <span id="message"></span>
                      </div>
                      <div class="group">
                         <label for="age">Age</label>
-                        <input type="number" name="age" minlength="1" maxlength="60" id="age" class="inputs"/>
+                        <input type="number" name="age" minlength="1" maxlength="60" placeholder="Fake Age" id="age" class="inputs" />
                         <span id="message"></span>
                      </div>
                   </fieldset>
@@ -44,27 +47,29 @@
                      <legend>Other Details</legend>
                      <div class="group">
                         <label for="email">Email</label>
-                        <input type="email" name="email" minlength="1" maxlength="60" id="email" class="inputs"/>
+                        <input type="email" name="email" minlength="1" maxlength="60" placeholder="Fake Email" id="email" class="inputs" />
                         <span id="message"></span>
                      </div>
                      <div class="group">
-                        <label for="Number">Number</label>
-                        <input type="text" name="number" minlength="1" maxlength="60" id="number" class="inputs"/>
+                        <label for="number">Number</label>
+                        <input type ="text" name ="number" minlength ="1" maxlength="60" placeholder="Fake Number" id="number" class="inputs" />
                         <span id="message"></span>
                      </div>
-                     <div class="group">
-                        <label for="radio">Destination</label>
-                        <div class="radio-container">
-                              <input type="radio" value="mars" name="destination" id=""> Mars </input>
-                              <input type="radio" value="earth99" name="destination" id=""> Earth 99 </input>
-                              <input type="radio" value="moon" name="destination" id=""> Moon</input>
-                              <input type="radio" value="jupiter" name="destination" id=""> Jupiter</input>
-                        </div>
+                     <div class="group checkbox">
+                        <label for="destination">Destination</label>
+                        <input type="checkbox" name="destination" value="eartch99">Earth 99</input>
+                        <input type="checkbox" name="destination" value="mars">Mars</input>
+                        <input type="checkbox" name="destination" value="moon">Moon</input>
+                        <input type="checkbox" name="destination" value="multiverse">Multiverse</input>
+                        <span id="message"></span>
                      </div>
+
                   </fieldset>
                </div>
                <div class="form-button">
-                  <button type="button">Proceed</button>
+                  <div class="group">
+                     <button type="button">Proceed</button>
+                  </div>
                </div>
             </form>
          </div>
