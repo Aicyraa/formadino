@@ -13,100 +13,60 @@
    <body>
       <div class="container">
          <div class="container-sidebar">
-            <!-- <img
-               src="./svg/Soothing Black And White GIF by Pi-Slices.gif"
-               alt=""
-            /> -->
             <span id="text">UNIVERSE</span>
          </div>
          <div class="container-form">
-            <div class="header">
-               <h2 id="header-text">X-VOYAGE</h2>
+            <div class="form-header">
+               <h2>X-VOYAGE</h2>
             </div>
-            <div class="form">
-               <form action="index.html" method="get">
-                  <fieldset class="form-main">
-                     <fieldset>
-                        <legend>Information</legend>
-                        <div class="group">
-                           <label for="fname">First Name</label>
-                           <input
-                              type="text"
-                              name="fname"
-                              minlength="1"
-                              maxlength="60"
-                              id="fname"
-                              class="inputs"
-                           />
-                           <span id="message"></span>
-                        </div>
-                        <div class="group">
-                           <label for="lname">Last Name</label>
-                           <input
-                              type="text"
-                              name="lname"
-                              minlength="1"
-                              maxlength="60"
-                              id="lname"
-                              class="inputs"
-                           />
-                           <span id="message"></span>
-                        </div>
-                        <div class="group">
-                           <label for="age">Age</label>
-                           <input
-                              type="number"
-                              name="age"
-                              minlength="1"
-                              maxlength="60"
-                              id="age"
-                              class="inputs"
-                           />
-                           <span id="message"></span>
-                        </div>
-                     </fieldset>
-
-                     <fieldset>
-                        <legend>Other Details</legend>
-                        <div class="group">
-                           <label for="email">Email</label>
-                           <input
-                              type="email"
-                              name="email"
-                              minlength="1"
-                              maxlength="60"
-                              id="email"
-                              class="inputs"
-                           />
-                           <span id="message"></span>
-                        </div>
-                        <div class="group">
-                           <label for="Number">Number</label>
-                           <input
-                              type="text"
-                              name="number"
-                              minlength="1"
-                              maxlength="60"
-                              id="number"
-                              class="inputs"
-                           />
-                           <span id="message"></span>
-                        </div>
-                        <div class="group">
-                           <label for="radio">Destination</label>
-                           <div class="radio-container">
-                                 <input type="radio" value="mars" name="destination" id=""> Mars </input>
-                                 <input type="radio" value="earth99" name="destination" id=""> Earth 99 </input>
-                                 <input type="radio" value="moon" name="destination" id=""> Moon</input>
-                                 <input type="radio" value="jupiter" name="destination" id=""> Jupiter</input>
-                           </div>
-                           <!-- <input type="radio" id="phone" name="contact" value="phone"> -->
-                        </div>
-                     </fieldset>
+            <form action="index.html" method="get">
+               <div class="inputs-group">
+                  <fieldset class="sectionA">
+                     <legend>Information</legend>
+                     <div class="group">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" minlength="1" maxlength="60" id="fname" class="inputs"/>
+                        <span id="message"></span>
+                     </div>
+                     <div class="group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" minlength="1" maxlength="60" id="lname" class="inputs"/>
+                        <span id="message"></span>
+                     </div>
+                     <div class="group">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" minlength="1" maxlength="60" id="age" class="inputs"/>
+                        <span id="message"></span>
+                     </div>
                   </fieldset>
-                  <button type="button">Submit!</button>
-               </form>
-            </div>
+
+                  <fieldset class="SectionB">
+                     <legend>Other Details</legend>
+                     <div class="group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" minlength="1" maxlength="60" id="email" class="inputs"/>
+                        <span id="message"></span>
+                     </div>
+                     <div class="group">
+                        <label for="Number">Number</label>
+                        <input type="text" name="number" minlength="1" maxlength="60" id="number" class="inputs"/>
+                        <span id="message"></span>
+                     </div>
+                     <div class="group">
+                        <label for="radio">Destination</label>
+                        <div class="radio-container">
+                              <input type="radio" value="mars" name="destination" id=""> Mars </input>
+                              <input type="radio" value="earth99" name="destination" id=""> Earth 99 </input>
+                              <input type="radio" value="moon" name="destination" id=""> Moon</input>
+                              <input type="radio" value="jupiter" name="destination" id=""> Jupiter</input>
+                        </div>
+                     </div>
+                  </fieldset>
+               </div>
+               <div class="form-button">
+                  <button type="button">Proceed</button>
+               </div>
+            </form>
          </div>
       </div>
    </body>
